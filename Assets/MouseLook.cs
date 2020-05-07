@@ -21,7 +21,7 @@ public class MouseLook : MonoBehaviour
     void Update()
     {
         //mouseX is movement from side to side
-        //Mouse X is preprogrammed in unity that checks for x axis changes.
+        //Mouse X is preprogrammed in unity that checks for x axis changes. You can find "Mouse X" in Project settings -> Input Manager (there are 2 Mouse X and Mouse Y, one for mouse and one for joystick)
         float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime; //Time.deltaTime is the time that has passed since the last time the Update fucntion was called. Solve issues of different frame rates
         float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
 

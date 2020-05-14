@@ -12,10 +12,15 @@ public class Gun : MonoBehaviour
 
     public Camera fpsCam;
     public ParticleSystem muzzleFlash;
+    public AudioSource gunSound;
 
     //Reference it as GameObject, so we can instantiate in the scene
     public GameObject impactEffect;
 
+    void Start()
+    {
+        //gunSound = GetComponent<AudioSource>();
+    }
     // Update is called once per frame
     void Update()
     {
@@ -30,6 +35,7 @@ public class Gun : MonoBehaviour
     {
         //Only play muzzle flash (particle system of gun) when shooting
         muzzleFlash.Play();
+        gunSound.Play();
 
         //RaycastHit is a variable that stores information on what our ray hits
         RaycastHit hitInfo;

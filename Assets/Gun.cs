@@ -17,10 +17,6 @@ public class Gun : MonoBehaviour
     //Reference it as GameObject, so we can instantiate in the scene
     public GameObject impactEffect;
 
-    void Start()
-    {
-        //gunSound = GetComponent<AudioSource>();
-    }
     // Update is called once per frame
     void Update()
     {

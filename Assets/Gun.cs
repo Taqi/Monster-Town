@@ -61,6 +61,7 @@ public class Gun : MonoBehaviour
             //Only want to have bullet impact effect if it hits something (so we put it inside this if statement)
             GameObject impact = Instantiate(impactEffect, hitInfo.point, Quaternion.LookRotation(hitInfo.normal));
             Destroy(impact, 2f); //Destroy after 2 seconds
+
         }
     }
 }

@@ -62,4 +62,12 @@ public class Monster : MonoBehaviour
 
         
     }
+
+    // (Animation event) Method gets called when Attack animation hits the target
+    public void AttackEnd()
+    {
+        //Send damage to the player
+        //PlayerMovement.Instance.OnHit(this.gameobject, 25);
+        //PlayerMovement.Instance.DoDeadByDamage("Dying");
+    }
 }

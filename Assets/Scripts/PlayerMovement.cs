@@ -47,4 +47,23 @@ public class PlayerMovement : MonoBehaviour
 
         controller.Move(velocity * Time.deltaTime);
     }
+
+    public void OnHit(GameObject hitter, float damage)
+    {
+       // DoHit(): //Animation of the player when he gets hit
+        //GameManager.Instance.SetDamage(damage);
+    }
+
+    public void DoHit()
+    {
+        //_animator.Play("Hit", 0, 0.0f);
+    }
+
+    public void DyingFromDamage(string deadAnimation)
+    {
+        if(GameManager.instance.IsDamageExceeded)
+        {
+            //_animator.Play(deadAnimation, 0, 0.0f); //Player shows dead animation
+        }
+    }
 }

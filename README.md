@@ -1,2 +1,2 @@
 # Monster-Town
-Personal project (game) created during the 2020 Summer
+[Not Finished/Cancelled] Personal project (game) created during the 2020 Summer
